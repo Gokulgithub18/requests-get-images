@@ -18,5 +18,5 @@ if __name__=="__main__":
     for file in file_list:
         download_file(
             url=config["BASE_URL"].format(file_name=file), 
-            output_file=os.path.join(os.getcwd(), config["DOWNLOAD_DIR"], file)
+            output_file_path=os.path.join(os.getcwd(), config["DOWNLOAD_DIR"], file)
         )
